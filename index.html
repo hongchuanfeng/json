@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>在线JSON格式化工具-OPENAI2025</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0;">
+	<meta name="keywords" content="JSON,JSON工具,JSON格式化工具,在线json格式化工具-OPENAI2025,实用在线JSON格式化工具-OPENAI2025, 在线免费实用软件工具" />
+    <meta name="description" content="JSON,JSON工具,JSON格式化工具,在线json格式化工具-OPENAI2025,实用在线JSON格式化工具-OPENAI2025, 在线免费实用软件工具" />
+	
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/clipboard.min.js"></script>
+    <link rel="stylesheet" href="css/jquery.json-viewer.min.css" />
+    <script src="js/jquery.json-viewer.min.js"></script>
+	<script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "https://hm.baidu.com/hm.js?77242385e804255a4d76267826ace33b";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+	</script>
+    <script type="text/javascript">
+	
+
+        $(document).ready(function () {
+            $("#gsh").click(function () {
+                $("#output").val(JSON.stringify(JSON.parse($("#output").val()), null, 4));
+                $("#json").jsonViewer(JSON.parse($("#output").val()));
+            });
+            $("#clean").click(function () {
+                $("#output,.input-url").val("");
+                $("#json").html("");
+            });
+			$("#copy").click(function () {
+                var copyText = $('#output');
+
+				// 选择文本框并选中内容
+				copyText.select();
+				// 复制内容到剪贴板
+				document.execCommand("copy");
+                alert('复制成功')
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container" style="padding-top:20px;padding-bottom:20px;">
+        <h4 class="mb-3">在线JSON格式化工具</h4>
+      
+
+        <div class="form-group mb-3">
+            <textarea class="form-control" rows="10" id="output" placeholder="请输入JSON字符串"></textarea>
+        </div>
+        <div class="row mb-3">
+            <div class="col">
+                <button class="btn btn-success btn-block" id="gsh">格式化</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-info btn-block copybtn" id="copy" data-clipboard-target="#output">复制</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-danger btn-block" id="clean">清空</button>
+            </div>
+        </div>
+        <pre id="json"></pre>
+    </div>
+
+    <script>
+        var clipboard = new ClipboardJS('.copybtn');
+    </script>
+</body>
+
+</html>
