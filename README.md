@@ -5,13 +5,12 @@
 ## 功能特点
 
 * 支持编辑框查看和树状分级查看
-* 支持根据URL获取远程JSON数据
 * 双视图显示
 * 支持一键复制格式化结果
 
 ## 站点预览
 
-* http://ouyangpeng.top/app/jsonformat/
+* https://json.openai2025.com/
 
 ## 用到的库
 
@@ -42,10 +41,3 @@ $("#json").jsonViewer(JSON.parse(string))
 <pre id="json"></pre>
 ```
 
-## 作者
-
-* 欧阳鹏
-
-## 开发时间
-
-* 2021年xx月xx日
