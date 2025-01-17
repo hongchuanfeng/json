@@ -32,63 +32,60 @@
 
     <div class="row">
         <div class="col-xs-6 col-sm-4">
-            <h1 class="h-left">JSON formatting tool</h1>
+            <h1 class="h-left">在线JSON工具</h1>
         </div>
         <div class="col-xs-6 h-right">
-            <a href="https://base64.openai2025.com" class="link-a" target="_blank" title="Online base64 transcoding">Base64 tool</a>
+            <a href="https://base64.openai2025.com" class="link-a" target="_blank" title="Base64转码ding">Base64转码</a>
 
-            <a href="https://reg.openai2025.com/" class="link-a" target="_blank" title="Regular expression">
-                Regular expression
-            </a>
-
-            <a title="mosaic Processing tool" class="link-a" href="https://mosaic.openai2025.com" target="_blank">
-                mosaic tool
-            </a>
-            <a title="watermark Processing" class="link-a" href="https://watermark.openai2025.com" target="_blank">
-                watermark Processing
-            </a>
-            <a title="Picture picking color" class="link-a" href="https://getcolor.openai2025.com" target="_blank">
-                Picture picking color
+            <a href="https://reg.openai2025.com/" class="link-a" target="_blank" title="正则表达式工具">
+                正则表达式工具
             </a>
 
-            <a title="Image to Excel" class="link-a" href="https://img2excel.openai2025.com" target="_blank">
-                Image to Excel
+            <a title="图片马赛克工具" class="link-a" href="https://mosaic.openai2025.com" target="_blank">
+                图片马赛克工具
+            </a>
+            <a title="图片水印处理" class="link-a" href="https://watermark.openai2025.com" target="_blank">
+                图片水印处理
+            </a>
+            <a title="图片拾取颜色" class="link-a" href="https://getcolor.openai2025.com" target="_blank">
+                图片拾取颜色
             </a>
 
-            <a title="Image to icon" class="link-a" href="https://icon.openai2025.com" target="_blank">
-                Image to icon
+            <a title="图片转Excel" class="link-a" href="https://img2excel.openai2025.com" target="_blank">
+                图片转Excel
+            </a>
+
+            <a title="图片转icon" class="link-a" href="https://icon.openai2025.com" target="_blank">
+                图片转icon
             </a>
         </div>
     </div>
 
-
     <div class="container" style="padding-top:20px;padding-bottom:20px;">
-      
-
 
         <div class="form-group mb-3">
-            <textarea class="form-control" rows="10" id="output" placeholder="Please enter a JSON string"></textarea>
+            <textarea class="form-control" rows="10" id="output" placeholder="请输入JSON字符串"></textarea>
         </div>
         <div class="row mb-3">
             <div class="col">
                 <button class="btn btn-success btn-block" id="gsh">
-                    format
+                    格式化
                 </button>
             </div>
             <div class="col">
                 <button class="btn btn-info btn-block copybtn" id="copy" data-clipboard-target="#output">
-                    copy
+                    复制
                 </button>
             </div>
             <div class="col">
                 <button class="btn btn-danger btn-block" id="clean">
-                    clear
+                    清除
                 </button>
             </div>
         </div>
         <pre id="json"></pre>
     </div>
-    <center>(<a href="./index-cn.html">Simplified Chinese</a> | <a href="./index.html">English</a>)</center>
+    <center>(<a href="./index-cn.html">简体中文</a> | <a href="./index.html">English</a>)</center>
     <script>
         var clipboard = new ClipboardJS('.copybtn');
     </script>
