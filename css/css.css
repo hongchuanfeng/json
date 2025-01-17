@@ -1,0 +1,10 @@
+﻿.h-left {
+    padding-left: 100px;
+}
+
+.h-right a {
+    margin: 10px;
+    text-decoration: underline;
+    color: #0087f5;
+    line-height:50px;
+}
