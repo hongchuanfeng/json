@@ -1,6 +1,6 @@
 # JSON格式化工具
 
-> 双视图格式化显示JSON数据
+> 双视图格式化显示JSON数据，是一款在线免费的json格式化工具，不需要登录，不需费用，用完即走，包有中文和英文版本。
 
 ## 功能特点
 
@@ -19,25 +19,13 @@
 * clipboard.js
 * jquery.json-viewer
 
-## 代码片段
 
-### 格式化JSON字符串
+## 中文效果
+![image](https://github.com/user-attachments/assets/7db20cc9-8b34-4935-b3a2-b3b5bff4d1f0)
 
-```javascript
-JSON.stringify(JSON.parse(array),null,4)
-```
 
-### jquery.json-viewer格式化JSON数据
+## 英文效果
 
-* JavaScript
+![image](https://github.com/user-attachments/assets/270fc67d-ee4e-46a0-977b-35418a943d4c)
 
-```javascript
-$("#json").jsonViewer(JSON.parse(string))
-```
-
-* HTML
-
-```html
-<pre id="json"></pre>
-```
 
