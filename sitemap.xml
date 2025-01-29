@@ -9,7 +9,18 @@
 
 <url>
   <loc>https://json.openai2025.com/</loc>
-  <lastmod>2025-01-09T16:09:23+00:00</lastmod>
+  <lastmod>2025-01-29T04:52:52+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://json.openai2025.com/index-cn.html</loc>
+  <lastmod>2025-01-29T04:52:53+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://json.openai2025.com/index.html</loc>
+  <lastmod>2025-01-29T04:52:53+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 
 
