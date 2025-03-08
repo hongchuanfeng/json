@@ -12,6 +12,6 @@
 
         copyText.select();
         document.execCommand("copy");
-        alert('Replicating Success')
+        alert('copy Success')
     });
 });
