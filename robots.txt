@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Allow all search engines to crawl all content
+# This includes all HTML pages, CSS, JS, and other resources
+
+# Sitemap location (if you have one)
+# Sitemap: https://json.openai2025.com/sitemap.xml
+
+# No restrictions on crawling
+# All files and directories are accessible to search engines
